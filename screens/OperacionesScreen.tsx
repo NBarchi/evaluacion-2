@@ -34,28 +34,32 @@ export default function OperacionesScreen() {
       <TextInput
       style={styles.input}
       onChangeText={(texto)=>setid(texto)}
+      value={id}
       placeholder='id operación'
       />  
       <TextInput
       style={styles.input}
       onChangeText={(texto)=>setmonto(texto)}
+      value={monto}
       placeholder='Monto'
       />  
       <TextInput
       style={styles.input}
       onChangeText={(texto)=>settipo(texto)}
+      value={tipo}
       placeholder='Tipo operación'
       />  
       <TextInput
       style={styles.input}
       onChangeText={(texto)=>setcomentario(texto)}
+      value={comentario}
       placeholder='Comentario'
       />
       <TouchableOpacity
       style={styles.btn}
       onPress={()=>guardar()}
       >
-        <Text style={styles.txt_btn}>Registro</Text>
+        <Text style={styles.txt_btn}>Aceptar</Text>
       </TouchableOpacity>  
     </View>
   )
